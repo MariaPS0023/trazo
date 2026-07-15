@@ -15,7 +15,6 @@ import { derivative } from './integracion/derivative.js';
 import { simpson13 } from './integracion/simpson-13.js';
 import { simpson38 } from './integracion/simpson-38.js';
 import { simpsonCompuesto } from './integracion/simpson_compuesto.js';
-import { simpsonAdaptativo } from './integracion/simpson_adaptativo.js';
 import { trapecio } from './integracion/trapecio.js';
 import { integracionMonteCarlo } from './integracion/monte_carlo.js';
 
@@ -115,7 +114,6 @@ const integracion = {
   simpson38,
   derivative,
   simpsonCompuesto,
-  simpsonAdaptativo,
   integracionMonteCarlo
 };
 
@@ -203,19 +201,20 @@ export {
   puntoFijo,
   muller,
 
-   // interpolacion
+  // interpolacion
   lagrange,
+  newtonDD,
+  splines,
   linearInterpolation,
   polyEval,
   splineCubicoNatural,
 
-   // integracion
+  // integracion
   trapecio,
   simpson13,
   simpson38,
   derivative,
   simpsonCompuesto,
-  simpsonAdaptativo,
   integracionMonteCarlo,
 
   // edo
@@ -306,15 +305,6 @@ export { lagrange } from './interpolacion/lagrange.js';
  * Re-exporta la función pública para interpolación lineal.
  */
 export { linearInterpolation } from './interpolacion/linear.js';
-/**
- * Re-exporta la función pública para interpolación de Newton por diferencias divididas.
- */
-export { newtonDD } from './interpolacion/newton-dd.js';
-
-/**
- * Re-exporta la implementación pública consolidada de splines cúbicos.
- */
-export { splines } from './interpolacion/splines.js';
 
 /**
  * Re-exporta el método público de eliminación de Gauss.
@@ -555,7 +545,6 @@ export {
  * Re-exporta el generador de reportes en Markdown.
  */
 export { exportarMarkdown } from './io/exportar_markdown.js';
-
 /**
  * Re-exporta los métodos públicos de análisis de datos.
  */
@@ -587,3 +576,7 @@ export {
  * Re-exporta la evaluación de polinomios mediante el esquema de Horner.
  */
 export { evaluarHorner } from './polinomios/horner.js';
+/**
+ * Re-exporta la función pública para cálculo de derivadas.
+ */
+export { derivative } from './integracion/derivative.js';

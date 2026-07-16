@@ -1,4 +1,4 @@
-import { regresionLineal, regresionPolinomial } from './analisis/ajuste_minimos_cuadrados.js';
+﻿import { regresionLineal, regresionPolinomial } from './analisis/ajuste_minimos_cuadrados.js';
 
 import {
   diferenciaCentrada,
@@ -59,7 +59,7 @@ import { secante } from './no-lineales/secante.js';
 
 import { evaluarHorner } from './polinomios/horner.js';
 
-// Importaciones de estadística descriptiva (issue #659)
+// Importaciones de estadÃ­stica descriptiva (issue #659)
 import {
   media,
   varianza,
@@ -289,76 +289,81 @@ export default {
   ...generadoresMatrices
 };
 /**
- * Re-exporta la función pública para cálculo de derivadas.
+ * Re-exporta la funciÃ³n pÃºblica para cÃ¡lculo de derivadas.
  */
 export { derivative } from './integracion/derivative.js';
 
 /**
- * Re-exporta el método público de integración Simpson 1/3.
+ * Re-exporta el mÃ©todo pÃºblico de integraciÃ³n Simpson 1/3.
  */
 export { simpson13 } from './integracion/simpson-13.js';
 
 /**
- * Re-exporta el método público de integración Simpson 3/8.
+ * Re-exporta el mÃ©todo pÃºblico de integraciÃ³n Simpson 3/8.
  */
 export { simpson38 } from './integracion/simpson-38.js';
 
 /**
- * Re-exporta la función pública para interpolación de Lagrange.
+ * Re-exporta la funciÃ³n pÃºblica para interpolaciÃ³n de Lagrange.
  */
 export { lagrange } from './interpolacion/lagrange.js';
 
 /**
- * Re-exporta la función pública para interpolación lineal.
+ * Re-exporta la funciÃ³n pÃºblica para interpolaciÃ³n lineal.
  */
 export { linearInterpolation } from './interpolacion/linear.js';
 
 /**
- * Re-exporta el método público de eliminación de Gauss.
+ * Re-exporta el mÃ©todo pÃºblico de eliminaciÃ³n de Gauss.
  */
 export { gauss } from './lineales/gauss.js';
 
 /**
- * Re-exporta el método público de Jacobi.
+ * Re-exporta el mÃ©todo pÃºblico de Jacobi.
  */
 export { jacobi } from './lineales/jacobi.js';
 
 /**
- * Re-exporta la función pública para determinantes de matrices 2x2.
+ * Re-exporta la funciÃ³n pÃºblica para determinantes de matrices 2x2.
  */
 export { det2x2 } from './lineales/determinant.js';
 
 /**
- * Re-exporta la función pública para determinantes de matrices 3x3.
+ * Re-exporta la funciÃ³n pÃºblica para determinantes de matrices 3x3.
  */
 export { det3x3 } from './lineales/determinant.js';
 
 /**
- * Re-exporta la función pública para evaluación de polinomios.
+ * Re-exporta la funciÃ³n pÃºblica para evaluaciÃ³n de polinomios.
  */
 export { polyEval } from './interpolacion/polyEval.js';
 
 /**
- * Re-exporta el método público de Newton-Raphson.
+ * Re-exporta el mÃ©todo pÃºblico de Newton-Raphson.
  */
 export { newtonRaphson } from './no-lineales/newton-raphson.js';
 /**
 
-* Agrupador para métodos no lineales.
+* Agrupador para mÃ©todos no lineales.
  */
 import { biseccion } from './no-lineales/biseccion.js';
 export { biseccion };
 export const noLineales = {
-  biseccion
+  biseccion,
+  falsaPosicion,
+  newtonRaphson,
+  secante,
+  puntoFijo,
+  muller
 };
 
 /**
- * Re-exporta el método de regresión no lineal por Gauss-Newton.
+ * Re-exporta el mÃ©todo de regresiÃ³n no lineal por Gauss-Newton.
  */
 export { regresionNoLineal } from './analisis/regresion_no_lineal.js';
 
 /**
- * Re-exporta las utilidades de conversión de unidades físicas.
+ * Re-exporta las utilidades de conversiÃ³n de unidades fÃ­sicas.
  */
 export {
   convertirLongitud,
@@ -368,76 +373,81 @@ export {
   unidadesDisponibles,
 } from './utils/unidades.js';
 /**
- * Re-exporta la función pública para cálculo de derivadas.
+ * Re-exporta la funciÃ³n pÃºblica para cÃ¡lculo de derivadas.
  */
 export { derivative } from './integracion/derivative.js';
 
 /**
- * Re-exporta el método público de integración Simpson 1/3.
+ * Re-exporta el mÃ©todo pÃºblico de integraciÃ³n Simpson 1/3.
  */
 export { simpson13 } from './integracion/simpson-13.js';
 
 /**
- * Re-exporta el método público de integración Simpson 3/8.
+ * Re-exporta el mÃ©todo pÃºblico de integraciÃ³n Simpson 3/8.
  */
 export { simpson38 } from './integracion/simpson-38.js';
 
 /**
- * Re-exporta la función pública para interpolación de Lagrange.
+ * Re-exporta la funciÃ³n pÃºblica para interpolaciÃ³n de Lagrange.
  */
 export { lagrange } from './interpolacion/lagrange.js';
 
 /**
- * Re-exporta la función pública para interpolación lineal.
+ * Re-exporta la funciÃ³n pÃºblica para interpolaciÃ³n lineal.
  */
 export { linearInterpolation } from './interpolacion/linear.js';
 
 /**
- * Re-exporta el método público de eliminación de Gauss.
+ * Re-exporta el mÃ©todo pÃºblico de eliminaciÃ³n de Gauss.
  */
 export { gauss } from './lineales/gauss.js';
 
 /**
- * Re-exporta el método público de Jacobi.
+ * Re-exporta el mÃ©todo pÃºblico de Jacobi.
  */
 export { jacobi } from './lineales/jacobi.js';
 
 /**
- * Re-exporta la función pública para determinantes de matrices 2x2.
+ * Re-exporta la funciÃ³n pÃºblica para determinantes de matrices 2x2.
  */
 export { det2x2 } from './lineales/determinant.js';
 
 /**
- * Re-exporta la función pública para determinantes de matrices 3x3.
+ * Re-exporta la funciÃ³n pÃºblica para determinantes de matrices 3x3.
  */
 export { det3x3 } from './lineales/determinant.js';
 
 /**
- * Re-exporta la función pública para evaluación de polinomios.
+ * Re-exporta la funciÃ³n pÃºblica para evaluaciÃ³n de polinomios.
  */
 export { polyEval } from './interpolacion/polyEval.js';
 
 /**
- * Re-exporta el método público de Newton-Raphson.
+ * Re-exporta el mÃ©todo pÃºblico de Newton-Raphson.
  */
 export { newtonRaphson } from './no-lineales/newton-raphson.js';
 /**
 
-* Agrupador para métodos no lineales.
+* Agrupador para mÃ©todos no lineales.
  */
 import { biseccion } from './no-lineales/biseccion.js';
 export { biseccion };
 export const noLineales = {
-  biseccion
+  biseccion,
+  falsaPosicion,
+  newtonRaphson,
+  secante,
+  puntoFijo,
+  muller
 };
 
 /**
- * Re-exporta el método de regresión no lineal por Gauss-Newton.
+ * Re-exporta el mÃ©todo de regresiÃ³n no lineal por Gauss-Newton.
  */
 export { regresionNoLineal } from './analisis/regresion_no_lineal.js';
 
 /**
- * Re-exporta las utilidades de conversión de unidades físicas.
+ * Re-exporta las utilidades de conversiÃ³n de unidades fÃ­sicas.
  */
 export {
   convertirLongitud,
@@ -448,7 +458,7 @@ export {
 } from './utils/unidades.js';
 
 /**
- * Re-exporta las utilidades de aritmética de números complejos.
+ * Re-exporta las utilidades de aritmÃ©tica de nÃºmeros complejos.
  */
 export {
   sumaComplejos,
@@ -458,76 +468,81 @@ export {
   divisionComplejos,
 } from './utils/numeros_complejos.js';
 /**
- * Re-exporta la función pública para cálculo de derivadas.
+ * Re-exporta la funciÃ³n pÃºblica para cÃ¡lculo de derivadas.
  */
 export { derivative } from './integracion/derivative.js';
 
 /**
- * Re-exporta el método público de integración Simpson 1/3.
+ * Re-exporta el mÃ©todo pÃºblico de integraciÃ³n Simpson 1/3.
  */
 export { simpson13 } from './integracion/simpson-13.js';
 
 /**
- * Re-exporta el método público de integración Simpson 3/8.
+ * Re-exporta el mÃ©todo pÃºblico de integraciÃ³n Simpson 3/8.
  */
 export { simpson38 } from './integracion/simpson-38.js';
 
 /**
- * Re-exporta la función pública para interpolación de Lagrange.
+ * Re-exporta la funciÃ³n pÃºblica para interpolaciÃ³n de Lagrange.
  */
 export { lagrange } from './interpolacion/lagrange.js';
 
 /**
- * Re-exporta la función pública para interpolación lineal.
+ * Re-exporta la funciÃ³n pÃºblica para interpolaciÃ³n lineal.
  */
 export { linearInterpolation } from './interpolacion/linear.js';
 
 /**
- * Re-exporta el método público de eliminación de Gauss.
+ * Re-exporta el mÃ©todo pÃºblico de eliminaciÃ³n de Gauss.
  */
 export { gauss } from './lineales/gauss.js';
 
 /**
- * Re-exporta el método público de Jacobi.
+ * Re-exporta el mÃ©todo pÃºblico de Jacobi.
  */
 export { jacobi } from './lineales/jacobi.js';
 
 /**
- * Re-exporta la función pública para determinantes de matrices 2x2.
+ * Re-exporta la funciÃ³n pÃºblica para determinantes de matrices 2x2.
  */
 export { det2x2 } from './lineales/determinant.js';
 
 /**
- * Re-exporta la función pública para determinantes de matrices 3x3.
+ * Re-exporta la funciÃ³n pÃºblica para determinantes de matrices 3x3.
  */
 export { det3x3 } from './lineales/determinant.js';
 
 /**
- * Re-exporta la función pública para evaluación de polinomios.
+ * Re-exporta la funciÃ³n pÃºblica para evaluaciÃ³n de polinomios.
  */
 export { polyEval } from './interpolacion/polyEval.js';
 
 /**
- * Re-exporta el método público de Newton-Raphson.
+ * Re-exporta el mÃ©todo pÃºblico de Newton-Raphson.
  */
 export { newtonRaphson } from './no-lineales/newton-raphson.js';
 /**
 
-* Agrupador para métodos no lineales.
+* Agrupador para mÃ©todos no lineales.
  */
 import { biseccion } from './no-lineales/biseccion.js';
 export { biseccion };
 export const noLineales = {
-  biseccion
+  biseccion,
+  falsaPosicion,
+  newtonRaphson,
+  secante,
+  puntoFijo,
+  muller
 };
 
 /**
- * Re-exporta el método de regresión no lineal por Gauss-Newton.
+ * Re-exporta el mÃ©todo de regresiÃ³n no lineal por Gauss-Newton.
  */
 export { regresionNoLineal } from './analisis/regresion_no_lineal.js';
 
 /**
- * Re-exporta las utilidades de conversión de unidades físicas.
+ * Re-exporta las utilidades de conversiÃ³n de unidades fÃ­sicas.
  */
 export {
   convertirLongitud,
@@ -538,7 +553,7 @@ export {
 } from './utils/unidades.js';
 
 /**
- * Re-exporta las utilidades de aritmética de números complejos.
+ * Re-exporta las utilidades de aritmÃ©tica de nÃºmeros complejos.
  */
 export {
   sumaComplejos,
@@ -553,70 +568,75 @@ export {
  */
 export { exportarMarkdown } from './io/exportar_markdown.js';
 /**
- * Re-exporta la función pública para cálculo de derivadas.
+ * Re-exporta la funciÃ³n pÃºblica para cÃ¡lculo de derivadas.
  */
 export { derivative } from './integracion/derivative.js';
 
 /**
- * Re-exporta el método público de integración Simpson 1/3.
+ * Re-exporta el mÃ©todo pÃºblico de integraciÃ³n Simpson 1/3.
  */
 export { simpson13 } from './integracion/simpson-13.js';
 
 /**
- * Re-exporta el método público de integración Simpson 3/8.
+ * Re-exporta el mÃ©todo pÃºblico de integraciÃ³n Simpson 3/8.
  */
 export { simpson38 } from './integracion/simpson-38.js';
 
 /**
- * Re-exporta la función pública para interpolación de Lagrange.
+ * Re-exporta la funciÃ³n pÃºblica para interpolaciÃ³n de Lagrange.
  */
 export { lagrange } from './interpolacion/lagrange.js';
 
 /**
- * Re-exporta la función pública para interpolación lineal.
+ * Re-exporta la funciÃ³n pÃºblica para interpolaciÃ³n lineal.
  */
 export { linearInterpolation } from './interpolacion/linear.js';
 
 /**
- * Re-exporta el método público de eliminación de Gauss.
+ * Re-exporta el mÃ©todo pÃºblico de eliminaciÃ³n de Gauss.
  */
 export { gauss } from './lineales/gauss.js';
 
 /**
- * Re-exporta el método público de Jacobi.
+ * Re-exporta el mÃ©todo pÃºblico de Jacobi.
  */
 export { jacobi } from './lineales/jacobi.js';
 
 /**
- * Re-exporta la función pública para determinantes de matrices 2x2.
+ * Re-exporta la funciÃ³n pÃºblica para determinantes de matrices 2x2.
  */
 export { det2x2 } from './lineales/determinant.js';
 
 /**
- * Re-exporta la función pública para determinantes de matrices 3x3.
+ * Re-exporta la funciÃ³n pÃºblica para determinantes de matrices 3x3.
  */
 export { det3x3 } from './lineales/determinant.js';
 
 /**
- * Re-exporta la función pública para evaluación de polinomios.
+ * Re-exporta la funciÃ³n pÃºblica para evaluaciÃ³n de polinomios.
  */
 export { polyEval } from './interpolacion/polyEval.js';
 
 /**
- * Re-exporta el método público de Newton-Raphson.
+ * Re-exporta el mÃ©todo pÃºblico de Newton-Raphson.
  */
 export { newtonRaphson } from './no-lineales/newton-raphson.js';
 /**
 
-* Agrupador para métodos no lineales.
+* Agrupador para mÃ©todos no lineales.
  */
 import { biseccion } from './no-lineales/biseccion.js';
 export { biseccion };
 export const noLineales = {
-  biseccion
+  biseccion,
+  falsaPosicion,
+  newtonRaphson,
+  secante,
+  puntoFijo,
+  muller
 };
 /**
- * Re-exporta el método de integración Monte Carlo multidimensional.
+ * Re-exporta el mÃ©todo de integraciÃ³n Monte Carlo multidimensional.
  */
 export { integracionMonteCarlo } from './integracion/monte_carlo.js';
 import { regresionLineal, regresionPolinomial } from './analisis/ajuste_minimos_cuadrados.js';
@@ -680,7 +700,7 @@ import { secante } from './no-lineales/secante.js';
 
 import { evaluarHorner } from './polinomios/horner.js';
 
-// Importaciones de estadística descriptiva (issue #659)
+// Importaciones de estadÃ­stica descriptiva (issue #659)
 import {
   media,
   varianza,
@@ -910,76 +930,81 @@ export default {
   ...generadoresMatrices
 };
 /**
- * Re-exporta la función pública para cálculo de derivadas.
+ * Re-exporta la funciÃ³n pÃºblica para cÃ¡lculo de derivadas.
  */
 export { derivative } from './integracion/derivative.js';
 
 /**
- * Re-exporta el método público de integración Simpson 1/3.
+ * Re-exporta el mÃ©todo pÃºblico de integraciÃ³n Simpson 1/3.
  */
 export { simpson13 } from './integracion/simpson-13.js';
 
 /**
- * Re-exporta el método público de integración Simpson 3/8.
+ * Re-exporta el mÃ©todo pÃºblico de integraciÃ³n Simpson 3/8.
  */
 export { simpson38 } from './integracion/simpson-38.js';
 
 /**
- * Re-exporta la función pública para interpolación de Lagrange.
+ * Re-exporta la funciÃ³n pÃºblica para interpolaciÃ³n de Lagrange.
  */
 export { lagrange } from './interpolacion/lagrange.js';
 
 /**
- * Re-exporta la función pública para interpolación lineal.
+ * Re-exporta la funciÃ³n pÃºblica para interpolaciÃ³n lineal.
  */
 export { linearInterpolation } from './interpolacion/linear.js';
 
 /**
- * Re-exporta el método público de eliminación de Gauss.
+ * Re-exporta el mÃ©todo pÃºblico de eliminaciÃ³n de Gauss.
  */
 export { gauss } from './lineales/gauss.js';
 
 /**
- * Re-exporta el método público de Jacobi.
+ * Re-exporta el mÃ©todo pÃºblico de Jacobi.
  */
 export { jacobi } from './lineales/jacobi.js';
 
 /**
- * Re-exporta la función pública para determinantes de matrices 2x2.
+ * Re-exporta la funciÃ³n pÃºblica para determinantes de matrices 2x2.
  */
 export { det2x2 } from './lineales/determinant.js';
 
 /**
- * Re-exporta la función pública para determinantes de matrices 3x3.
+ * Re-exporta la funciÃ³n pÃºblica para determinantes de matrices 3x3.
  */
 export { det3x3 } from './lineales/determinant.js';
 
 /**
- * Re-exporta la función pública para evaluación de polinomios.
+ * Re-exporta la funciÃ³n pÃºblica para evaluaciÃ³n de polinomios.
  */
 export { polyEval } from './interpolacion/polyEval.js';
 
 /**
- * Re-exporta el método público de Newton-Raphson.
+ * Re-exporta el mÃ©todo pÃºblico de Newton-Raphson.
  */
 export { newtonRaphson } from './no-lineales/newton-raphson.js';
 /**
 
-* Agrupador para métodos no lineales.
+* Agrupador para mÃ©todos no lineales.
  */
 import { biseccion } from './no-lineales/biseccion.js';
 export { biseccion };
 export const noLineales = {
-  biseccion
+  biseccion,
+  falsaPosicion,
+  newtonRaphson,
+  secante,
+  puntoFijo,
+  muller
 };
 
 /**
- * Re-exporta el método de regresión no lineal por Gauss-Newton.
+ * Re-exporta el mÃ©todo de regresiÃ³n no lineal por Gauss-Newton.
  */
 export { regresionNoLineal } from './analisis/regresion_no_lineal.js';
 
 /**
- * Re-exporta las utilidades de conversión de unidades físicas.
+ * Re-exporta las utilidades de conversiÃ³n de unidades fÃ­sicas.
  */
 export {
   convertirLongitud,
@@ -989,76 +1014,81 @@ export {
   unidadesDisponibles,
 } from './utils/unidades.js';
 /**
- * Re-exporta la función pública para cálculo de derivadas.
+ * Re-exporta la funciÃ³n pÃºblica para cÃ¡lculo de derivadas.
  */
 export { derivative } from './integracion/derivative.js';
 
 /**
- * Re-exporta el método público de integración Simpson 1/3.
+ * Re-exporta el mÃ©todo pÃºblico de integraciÃ³n Simpson 1/3.
  */
 export { simpson13 } from './integracion/simpson-13.js';
 
 /**
- * Re-exporta el método público de integración Simpson 3/8.
+ * Re-exporta el mÃ©todo pÃºblico de integraciÃ³n Simpson 3/8.
  */
 export { simpson38 } from './integracion/simpson-38.js';
 
 /**
- * Re-exporta la función pública para interpolación de Lagrange.
+ * Re-exporta la funciÃ³n pÃºblica para interpolaciÃ³n de Lagrange.
  */
 export { lagrange } from './interpolacion/lagrange.js';
 
 /**
- * Re-exporta la función pública para interpolación lineal.
+ * Re-exporta la funciÃ³n pÃºblica para interpolaciÃ³n lineal.
  */
 export { linearInterpolation } from './interpolacion/linear.js';
 
 /**
- * Re-exporta el método público de eliminación de Gauss.
+ * Re-exporta el mÃ©todo pÃºblico de eliminaciÃ³n de Gauss.
  */
 export { gauss } from './lineales/gauss.js';
 
 /**
- * Re-exporta el método público de Jacobi.
+ * Re-exporta el mÃ©todo pÃºblico de Jacobi.
  */
 export { jacobi } from './lineales/jacobi.js';
 
 /**
- * Re-exporta la función pública para determinantes de matrices 2x2.
+ * Re-exporta la funciÃ³n pÃºblica para determinantes de matrices 2x2.
  */
 export { det2x2 } from './lineales/determinant.js';
 
 /**
- * Re-exporta la función pública para determinantes de matrices 3x3.
+ * Re-exporta la funciÃ³n pÃºblica para determinantes de matrices 3x3.
  */
 export { det3x3 } from './lineales/determinant.js';
 
 /**
- * Re-exporta la función pública para evaluación de polinomios.
+ * Re-exporta la funciÃ³n pÃºblica para evaluaciÃ³n de polinomios.
  */
 export { polyEval } from './interpolacion/polyEval.js';
 
 /**
- * Re-exporta el método público de Newton-Raphson.
+ * Re-exporta el mÃ©todo pÃºblico de Newton-Raphson.
  */
 export { newtonRaphson } from './no-lineales/newton-raphson.js';
 /**
 
-* Agrupador para métodos no lineales.
+* Agrupador para mÃ©todos no lineales.
  */
 import { biseccion } from './no-lineales/biseccion.js';
 export { biseccion };
 export const noLineales = {
-  biseccion
+  biseccion,
+  falsaPosicion,
+  newtonRaphson,
+  secante,
+  puntoFijo,
+  muller
 };
 
 /**
- * Re-exporta el método de regresión no lineal por Gauss-Newton.
+ * Re-exporta el mÃ©todo de regresiÃ³n no lineal por Gauss-Newton.
  */
 export { regresionNoLineal } from './analisis/regresion_no_lineal.js';
 
 /**
- * Re-exporta las utilidades de conversión de unidades físicas.
+ * Re-exporta las utilidades de conversiÃ³n de unidades fÃ­sicas.
  */
 export {
   convertirLongitud,
@@ -1069,7 +1099,7 @@ export {
 } from './utils/unidades.js';
 
 /**
- * Re-exporta las utilidades de aritmética de números complejos.
+ * Re-exporta las utilidades de aritmÃ©tica de nÃºmeros complejos.
  */
 export {
   sumaComplejos,
@@ -1079,76 +1109,81 @@ export {
   divisionComplejos,
 } from './utils/numeros_complejos.js';
 /**
- * Re-exporta la función pública para cálculo de derivadas.
+ * Re-exporta la funciÃ³n pÃºblica para cÃ¡lculo de derivadas.
  */
 export { derivative } from './integracion/derivative.js';
 
 /**
- * Re-exporta el método público de integración Simpson 1/3.
+ * Re-exporta el mÃ©todo pÃºblico de integraciÃ³n Simpson 1/3.
  */
 export { simpson13 } from './integracion/simpson-13.js';
 
 /**
- * Re-exporta el método público de integración Simpson 3/8.
+ * Re-exporta el mÃ©todo pÃºblico de integraciÃ³n Simpson 3/8.
  */
 export { simpson38 } from './integracion/simpson-38.js';
 
 /**
- * Re-exporta la función pública para interpolación de Lagrange.
+ * Re-exporta la funciÃ³n pÃºblica para interpolaciÃ³n de Lagrange.
  */
 export { lagrange } from './interpolacion/lagrange.js';
 
 /**
- * Re-exporta la función pública para interpolación lineal.
+ * Re-exporta la funciÃ³n pÃºblica para interpolaciÃ³n lineal.
  */
 export { linearInterpolation } from './interpolacion/linear.js';
 
 /**
- * Re-exporta el método público de eliminación de Gauss.
+ * Re-exporta el mÃ©todo pÃºblico de eliminaciÃ³n de Gauss.
  */
 export { gauss } from './lineales/gauss.js';
 
 /**
- * Re-exporta el método público de Jacobi.
+ * Re-exporta el mÃ©todo pÃºblico de Jacobi.
  */
 export { jacobi } from './lineales/jacobi.js';
 
 /**
- * Re-exporta la función pública para determinantes de matrices 2x2.
+ * Re-exporta la funciÃ³n pÃºblica para determinantes de matrices 2x2.
  */
 export { det2x2 } from './lineales/determinant.js';
 
 /**
- * Re-exporta la función pública para determinantes de matrices 3x3.
+ * Re-exporta la funciÃ³n pÃºblica para determinantes de matrices 3x3.
  */
 export { det3x3 } from './lineales/determinant.js';
 
 /**
- * Re-exporta la función pública para evaluación de polinomios.
+ * Re-exporta la funciÃ³n pÃºblica para evaluaciÃ³n de polinomios.
  */
 export { polyEval } from './interpolacion/polyEval.js';
 
 /**
- * Re-exporta el método público de Newton-Raphson.
+ * Re-exporta el mÃ©todo pÃºblico de Newton-Raphson.
  */
 export { newtonRaphson } from './no-lineales/newton-raphson.js';
 /**
 
-* Agrupador para métodos no lineales.
+* Agrupador para mÃ©todos no lineales.
  */
 import { biseccion } from './no-lineales/biseccion.js';
 export { biseccion };
 export const noLineales = {
-  biseccion
+  biseccion,
+  falsaPosicion,
+  newtonRaphson,
+  secante,
+  puntoFijo,
+  muller
 };
 
 /**
- * Re-exporta el método de regresión no lineal por Gauss-Newton.
+ * Re-exporta el mÃ©todo de regresiÃ³n no lineal por Gauss-Newton.
  */
 export { regresionNoLineal } from './analisis/regresion_no_lineal.js';
 
 /**
- * Re-exporta las utilidades de conversión de unidades físicas.
+ * Re-exporta las utilidades de conversiÃ³n de unidades fÃ­sicas.
  */
 export {
   convertirLongitud,
@@ -1159,7 +1194,7 @@ export {
 } from './utils/unidades.js';
 
 /**
- * Re-exporta las utilidades de aritmética de números complejos.
+ * Re-exporta las utilidades de aritmÃ©tica de nÃºmeros complejos.
  */
 export {
   sumaComplejos,
@@ -1174,77 +1209,82 @@ export {
  */
 export { exportarMarkdown } from './io/exportar_markdown.js';
 /**
- * Re-exporta la función pública para cálculo de derivadas.
+ * Re-exporta la funciÃ³n pÃºblica para cÃ¡lculo de derivadas.
  */
 export { derivative } from './integracion/derivative.js';
 
 /**
- * Re-exporta el método público de integración Simpson 1/3.
+ * Re-exporta el mÃ©todo pÃºblico de integraciÃ³n Simpson 1/3.
  */
 export { simpson13 } from './integracion/simpson-13.js';
 
 /**
- * Re-exporta el método público de integración Simpson 3/8.
+ * Re-exporta el mÃ©todo pÃºblico de integraciÃ³n Simpson 3/8.
  */
 export { simpson38 } from './integracion/simpson-38.js';
 
 /**
- * Re-exporta la función pública para interpolación de Lagrange.
+ * Re-exporta la funciÃ³n pÃºblica para interpolaciÃ³n de Lagrange.
  */
 export { lagrange } from './interpolacion/lagrange.js';
 
 /**
- * Re-exporta la función pública para interpolación lineal.
+ * Re-exporta la funciÃ³n pÃºblica para interpolaciÃ³n lineal.
  */
 export { linearInterpolation } from './interpolacion/linear.js';
 
 /**
- * Re-exporta el método público de eliminación de Gauss.
+ * Re-exporta el mÃ©todo pÃºblico de eliminaciÃ³n de Gauss.
  */
 export { gauss } from './lineales/gauss.js';
 
 /**
- * Re-exporta el método público de Jacobi.
+ * Re-exporta el mÃ©todo pÃºblico de Jacobi.
  */
 export { jacobi } from './lineales/jacobi.js';
 
 /**
- * Re-exporta la función pública para determinantes de matrices 2x2.
+ * Re-exporta la funciÃ³n pÃºblica para determinantes de matrices 2x2.
  */
 export { det2x2 } from './lineales/determinant.js';
 
 /**
- * Re-exporta la función pública para determinantes de matrices 3x3.
+ * Re-exporta la funciÃ³n pÃºblica para determinantes de matrices 3x3.
  */
 export { det3x3 } from './lineales/determinant.js';
 
 /**
- * Re-exporta la función pública para evaluación de polinomios.
+ * Re-exporta la funciÃ³n pÃºblica para evaluaciÃ³n de polinomios.
  */
 export { polyEval } from './interpolacion/polyEval.js';
 
 /**
- * Re-exporta el método público de Newton-Raphson.
+ * Re-exporta el mÃ©todo pÃºblico de Newton-Raphson.
  */
 export { newtonRaphson } from './no-lineales/newton-raphson.js';
 /**
 
-* Agrupador para métodos no lineales.
+* Agrupador para mÃ©todos no lineales.
  */
 import { biseccion } from './no-lineales/biseccion.js';
 export { biseccion };
 export const noLineales = {
-  biseccion
+  biseccion,
+  falsaPosicion,
+  newtonRaphson,
+  secante,
+  puntoFijo,
+  muller
 };
 /**
- * Re-exporta el método de integración Monte Carlo multidimensional.
+ * Re-exporta el mÃ©todo de integraciÃ³n Monte Carlo multidimensional.
  */
 /**
- * Re-exporta el generador de números pseudoaleatorios con semilla reproducible.
+ * Re-exporta el generador de nÃºmeros pseudoaleatorios con semilla reproducible.
  */
 export { crearGeneradorAleatorio } from './utils/prng.js';
 /**
- * Re-exporta las utilidades básicas de álgebra de vectores.
+ * Re-exporta las utilidades bÃ¡sicas de Ã¡lgebra de vectores.
  */
 export {
   sumaVectores,
@@ -1257,6 +1297,6 @@ export {
 } from './utils/algebra_vectores.js';
 
 /**
- * Re-exporta el cálculo de matriz inversa mediante Gauss-Jordan.
+ * Re-exporta el cÃ¡lculo de matriz inversa mediante Gauss-Jordan.
  */
 export { calcularInversa } from './lineales/inversa.js';
